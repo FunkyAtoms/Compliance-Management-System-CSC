@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic dashboard design thing</title>
+    <link rel="stylesheet" href="dsbstyle.css">
+
+     <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- just a css and chart i pulled from online, placeholder lng ig -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="user-profile">
+          <img src="https://i.pravatar.cc/150?u=fake@pravatar.com" alt="User">
+          <h3>User</h3>
+          <p>admin</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active"><i class="fas fa-th-large"></i> Dashboard</li>
+            <li class="nav-item"><i class="fas fa-envelope"></i> Mail</li>
+            <li class="nav-item"><i class="fas fa-calendar-alt"></i> Calendar</li>
+            <li class="nav-item"><i class="fas fa-layer-group"></i> Elements</li>
+            <li class="nav-item"><i class="fas fa-cube"></i> Components</li>
+            <li class="nav-item"><i class="fas fa-icons"></i> Icons</li>
+        </ul>
+    </aside>
+
+    <main class="main-container">
+        <nav class="top-nav">
+            <div class="nav-left">
+                <div class="brand">yes</div>
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-expand"></i>
+                <i class="fas fa-comment"></i>
+                <img src="https://i.pravatar.cc/150?u=fake@pravatar.com" class="nav-avatar">
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="welcome-header">
+                <h1>Welcome to epstein island</h1>
+                <div class="breadcrumb">yes / <span>Dashboard</span></div>
+            </div>
+
+            <section class="stats-grid">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="icon-box bg-light-blue"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="card-info">
+                            <h2 id="total-sales">67</h2>
+                            <p>Total Slaves</p>
+                        </div>
+                    </div>
+                    <div class="progress-container"><div class="progress-bar bg-light-blue" style="width: 60%;"></div></div>
+                    <div class="card-footer"><span>SLAVES</span><span>60%</span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="icon-box bg-light-red"><i class="fas fa-eye"></i></div>
+                        <div class="card-info">
+                            <h2 id="unique-visitors">20,544</h2>
+                            <p>Unique Visitors</p>
+                        </div>
+                    </div>
+                    <div class="progress-container"><div class="progress-bar bg-light-red" style="width: 60%;"></div></div>
+                    <div class="card-footer"><span>VISITORS</span><span>60%</span></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="icon-box bg-deep-red"><i class="fas fa-users"></i></div>
+                        <div class="card-info">
+                            <h2 id="new-users">5,210</h2>
+                            <p>New Users</p>
+                        </div>
+                    </div>
+                    <div class="progress-container"><div class="progress-bar bg-deep-red" style="width: 57%;"></div></div>
+                    <div class="card-footer"><span>USERS</span><span>57%</span></div>
+                </div>
+            </section>
+
+            <section class="charts-row">
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h4>WEBSITE STATS</h4>
+                        <div class="panel-controls">
+                            <i class="fas fa-sync-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="areaChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-panel">
+                    <div class="panel-header">
+                        <h4>WEBSITE STATS</h4>
+                        <div class="panel-controls">
+                            <i class="fas fa-sync-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="dsbscript.js"></script>
+        </div>
+    </main>
+</body>
+</html>
